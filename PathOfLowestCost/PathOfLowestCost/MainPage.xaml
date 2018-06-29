@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PathOfLowestCost"
+             x:Class="PathOfLowestCost.MainPage">
+
+    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Padding="30">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+            <Editor HorizontalOptions="FillAndExpand" Text="{Binding MatrixData}" HeightRequest="100"></Editor>
+            <Button HorizontalOptions="EndAndExpand" Clicked="Button_OnClicked" Text="Find lowest"></Button>
+        </StackLayout>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+            <Label HorizontalOptions="FillAndExpand" Text="{Binding CostPath}"></Label>
+            <Label HorizontalOptions="FillAndExpand" Text="{Binding TotalCost}"></Label>
+            <Label HorizontalOptions="FillAndExpand" Text="{Binding CompletePath}"></Label>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
